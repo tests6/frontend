@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button onclick="downloadHistory()">
+                <i class="fas fa-download"></i>
+            </button>
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="eraseCharacter()" class="erase">
+                <span class="erase-icon"></span>
+            </button>
+            <button onclick="calculate()" class="equal">=</button>
+            <button onclick="appendValue(7)">7</button>
+            <button onclick="appendValue(8)">8</button>
+            <button onclick="appendValue(9)">9</button>
+            <button onclick="appendValue('+')" class="operator">+</button>
+            <button onclick="appendValue(4)">4</button>
+            <button onclick="appendValue(5)">5</button>
+            <button onclick="appendValue(6)">6</button>
+            <button onclick="appendValue('-')" class="operator">-</button>
+            <button onclick="appendValue(1)">1</button>
+            <button onclick="appendValue(2)">2</button>
+            <button onclick="appendValue(3)">3</button>
+            <button onclick="appendValue('*')" class="operator">*</button>
+            <button onclick="appendValue(0)">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="appendValue(';')">;</button>
+            <button onclick="appendValue('/')" class="operator">/</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
